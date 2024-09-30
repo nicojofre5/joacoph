@@ -13,23 +13,67 @@ html{
     --color-secondary:white;
 
 }
+ul{
+    list-style: none;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
 body{
     background-color: var(--color-one);
+    display: grid;
+    grid-template-areas: "header main"
+                       "header main"
+                       "header main"
+                       "sobremi sobremi"
+                       "servicios servicios"
+                       "footer footer";
+
+  grid-template-columns: 0.5fr 4fr;
+  grid-template-rows: 350px 200px 100px 200px;
+}
+/* TODO Comienza el nav bar y header */
+.cont-logo img{
+    width: 150px;
 }
 
-.cont-logo-inicial img{
-    width: 400px;
+header{
+    grid-area: header;
 }
-main{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-h1{
-    font-size: 2.7rem;
+.nav-link{
+    display: inline-block;
+    padding: 10px;
+    margin: 7px;
+    font-size: 1.5rem;
     font-family: var(--font-two);
+}
+.menu{
     text-align: center;
+}
+
+/* TODO Comienza la parte del main */
+
+main{
+    grid-area: main;
+}
+/* TODO Seccion sobre mi */
+.sobremi{
+    grid-area: sobremi;
+}
+/* TODO Seccion nuestros servicios */
+
+.servicios{
+    grid-area: servicios;
+}
+/* TODO Comienza el footer */
+
+footer{
+    grid-area: footer;
+    padding: 10px;
+    text-align: center;
+}
+/* TODO COMIENZA LA PARTE DE MEDIAQUERY  */
+@media only screen and (max-width:600px){
+
 }
