@@ -30,10 +30,11 @@ body {
     "sobremi sobremi sobremi"
     "sobremi sobremi sobremi"
     "servicios servicios servicios"
+    "servicios servicios servicios"
     "footer footer footer";
 
   grid-template-columns: 0.5fr 1fr 3fr;
-  grid-template-rows: 200px 200px 250px 400px 250px 200px 100px;
+  grid-template-rows: 200px 200px 250px 400px 250px 300px 450px 100px;
   color: white;
 }
 /* TODO Comienza el nav bar y header */
@@ -45,6 +46,9 @@ header {
   grid-area: header;
   padding: 5px;
 }
+.cont-bar {
+    display: none;
+}
 .nav-link {
   display: inline-block;
   padding: 20px;
@@ -55,6 +59,7 @@ header {
 }
 .nav-link:hover {
   color: rgb(231, 182, 201);
+  transition: color 0.8s;
 }
 .menu {
   text-align: center;
@@ -75,6 +80,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.nombrePrincipal{
+    font-size: 1.9rem;
+    font-family: var(--font-one);
+    font-weight: 200;
 }
 .inicio {
   padding: 0px 20px;
@@ -114,7 +124,7 @@ main {
   padding: 20px;
   align-self: center;
 }
-.cont-presentacion h2 {
+.cont-presentacion h2, .servicios h2 {
   font-size: 2.4rem;
   padding: 7px 0px;
   font-family: var(--font-two);
@@ -122,6 +132,7 @@ main {
 }
 .joa {
   font-weight: 900;
+  font-style: italic;
 }
 .cont-presentacion p {
   font-size: 1.5rem;
@@ -148,7 +159,22 @@ main {
 
 .servicios {
   grid-area: servicios;
-  min-height: 100vh;
+padding: 30px;
+}
+.cont-servicio{
+  display: flex; 
+  justify-content: space-around;
+  gap: 5px;
+}
+.servicios p{
+  padding: 8px 0px;
+  font-size: 1.2rem;
+  font-family: var(--font-one);
+}
+.card-servicio{
+  padding: 10px;
+  background-color: rgba(82, 80, 81, 0.224);
+  width: 350px;
 }
 /* TODO Comienza el footer */
 
@@ -156,9 +182,19 @@ footer {
   grid-area: footer;
   padding: 10px;
   text-align: center;
+  font-size: 1.4rem;
+  font-family: var(--font-one);
+  font-weight: 200;
+}
+footer p>a{
+    color: rgb(255, 226, 245);
+}
+footer p>a:hover{
+    color: rgb(211, 68, 125);
+    transition: color 0.8s;
 }
 /* TODO COMIENZA LA PARTE DE MEDIAQUERY  */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   
     body {
         display: unset;
@@ -193,6 +229,16 @@ footer {
  
 
  }
+ .cont-bar {
+    display: block;
+    align-self: center;
+    cursor: pointer;
+ }
+ .cont-bar i{
+   
+    font-size: 2.8rem;
+    padding: 8px 18px;
+ }
   .nav-link{
     padding:3px;
     gap:0px
@@ -208,5 +254,8 @@ footer {
 
 .cont-redes-header{
     display: none;
+}
+.cont-servicio{
+  flex-wrap: wrap;
 }
 }
