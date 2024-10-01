@@ -164,17 +164,30 @@ padding: 30px;
 .cont-servicio{
   display: flex; 
   justify-content: space-around;
-  gap: 5px;
+  gap: 7px;
+  margin: 5px;
 }
 .servicios p{
   padding: 8px 0px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: var(--font-one);
 }
 .card-servicio{
-  padding: 10px;
+  padding: 20px;
   background-color: rgba(82, 80, 81, 0.224);
   width: 350px;
+  border-radius: 4px;
+}
+.card-servicio h3{
+  font-size: 2.3rem;
+  padding: 9px 0px;
+  font-family: var(--font-two);
+}
+.card-servicio h4{
+  font-size: 1.7rem;
+  font-family: var(--font-two);
+  font-weight: bolder;
+  
 }
 /* TODO Comienza el footer */
 
