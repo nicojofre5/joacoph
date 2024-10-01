@@ -1,139 +1,212 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
-:root{
-    --font-one:"Merriweather", serif;
-    --font-two:"Fjalla One", sans-serif;
-    --color-one:black;
-    --color-secondary:white;
+:root {
+  --font-one: "Merriweather", serif;
+  --font-two: "Fjalla One", sans-serif;
+  --color-one: black;
+  --color-secondary: white;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  background-color: var(--color-one);
+  display: grid;
+  grid-template-areas:
+    "header main main"
+    "header main main"
+    "header main main"
+    "sobremi sobremi sobremi"
+    "sobremi sobremi sobremi"
+    "servicios servicios servicios"
+    "footer footer footer";
 
-}
-ul{
-    list-style: none;
-}
-a{
-    color:inherit;
-    text-decoration: none;
-}
-body{
-    background-color: var(--color-one);
-    display: grid;
-    grid-template-areas: "header main main"
-                       "header main main"
-                       "header main main"
-                       "sobremi sobremi sobremi"
-                       "servicios servicios servicios"
-                       "footer footer footer";
-
-  grid-template-columns: 0.5fr 0.5fr 4fr;
-  grid-template-rows: 350px 200px 100px 300px 200px 100px;
+  grid-template-columns: 0.5fr 1fr 3fr;
+  grid-template-rows: 200px 200px 250px 400px 250px 200px 100px;
   color: white;
 }
 /* TODO Comienza el nav bar y header */
-.cont-logo img{
-    width: 150px;
+.cont-logo img {
+  width: 150px;
 }
 
-header{
-    grid-area: header;
-    padding: 5px;
+header {
+  grid-area: header;
+  padding: 5px;
 }
-.nav-link{
-    display: inline-block;
-    padding: 20px;
-    margin: 12px;
-    font-size: 1.5rem;
-    font-family: var(--font-one);
-    font-weight: bold;
-    
+.nav-link {
+  display: inline-block;
+  padding: 20px;
+  margin: 12px;
+  font-size: 1.5rem;
+  font-family: var(--font-one);
+  font-weight: bold;
 }
-.nav-link:hover{
-    color: rgb(231, 182, 201);
+.nav-link:hover {
+  color: rgb(231, 182, 201);
 }
-.menu{
-    text-align: center;
+.menu {
+  text-align: center;
 }
-.cont-redes-header{
-    text-align: center;
-    padding: 8px;
-    margin: 50px 0px;
+.cont-redes-header {
+  text-align: center;
+  padding: 8px;
+  margin: 50px 0px;
 }
-.cont-redes-header a>i{
-    font-size: 2rem;
-    margin: 4px;
+.cont-redes-header a > i {
+  font-size: 2rem;
+  margin: 4px;
 }
 /* TODO Comienza la parte del main */
 
-main{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.inicio{
-    padding: 0px 20px;
-    text-align: center;
-    background-image: url(../img/fondo.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.inicio {
+  padding: 0px 20px;
+  text-align: center;
+  background-image: url(../img/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.inicio h1{
-    font-size: 3.8rem;
-    font-family: var(--font-two);
+.inicio p {
+  font-size: 3.4rem;
+  font-family: var(--font-two);
 }
 
-.cont-subprof p{
-    display: inline-block;
-    font-size: 1.5rem;
-    background-color: rgb(46, 1, 1);
-    padding: 4px 8px;
-    margin: 4px;
-    color: rgb(211, 68, 125);
-    border-radius: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
-    font-weight: 100;
+.cont-subprof p {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: rgb(46, 1, 1);
+  padding: 4px 8px;
+  margin: 4px;
+  color: rgb(211, 68, 125);
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
 }
 /* TODO Seccion sobre mi */
-.sobremi{
-    grid-area: sobremi;
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    gap: 5px;
+.sobremi {
+  grid-area: sobremi;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 5px;
+
 }
 .cont-presentacion {
-    padding: 20px;
-    align-self: center;
+  padding: 20px;
+  align-self: center;
 }
-.cont-sobremi img{
-    width: 140px;
-    padding: 20px;
+.cont-presentacion h2 {
+  font-size: 2.4rem;
+  padding: 7px 0px;
+  font-family: var(--font-two);
+  text-transform: uppercase;
 }
-.cont-sobremi{
-    align-self: center;
+.joa {
+  font-weight: 900;
+}
+.cont-presentacion p {
+  font-size: 1.5rem;
+  font-family: var(--font-one);
+  font-weight: 100;
+  padding: 10px 0px;
+}
+.cont-sobremi img {
+  width: 250px;
+  padding: 10px;
+  border-radius: 100%;
+}
+.title_sobremi {
+  font-size: 2.3rem;
+  width: 30%;
+  font-family: var(--font-two);
+  color: transparent;
+  -webkit-text-stroke: 0.5px var(--color-secondary);
+}
+.cont-sobremi {
+  align-self: center;
 }
 /* TODO Seccion nuestros servicios */
 
-.servicios{
-    grid-area: servicios;
+.servicios {
+  grid-area: servicios;
+  min-height: 100vh;
 }
 /* TODO Comienza el footer */
 
-footer{
-    grid-area: footer;
-    padding: 10px;
-    text-align: center;
+footer {
+  grid-area: footer;
+  padding: 10px;
+  text-align: center;
 }
 /* TODO COMIENZA LA PARTE DE MEDIAQUERY  */
-@media only screen and (max-width:600px){
-    body{
+@media only screen and (max-width: 600px) {
+  
+    body {
+        display: unset;
+    /* grid-template-areas:
+      "header header main main"
+      "header header main main"
+      "header header main main"
+      "sobremi sobremi sobremi sobremi"
+    
+      "servicios servicios servicios servicios"
+      "footer footer footer footer";
 
-    }
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    grid-template-rows: 100px 200px 350px 200px 250px 200px; */
+  }
+  .cont-logo img {
+    width: 90px;
+
+  }
+  main{
+    min-height: 100vh;
+  }
+  header{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+ nav{
+    display: none;
+ 
+
+ }
+  .nav-link{
+    padding:3px;
+    gap:0px
+  }
+  .cont-presentacion {
+    padding: 20px;
+    align-self: baseline;
+  }
+ 
+.sobremi{
+      flex-wrap: wrap;
+}
+
+.cont-redes-header{
+    display: none;
+}
 }
