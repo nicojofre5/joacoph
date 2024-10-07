@@ -360,6 +360,7 @@ footer p>a:hover{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    transition: 1.50s;
   }
  nav{
     display: none;
@@ -397,5 +398,16 @@ footer p>a:hover{
 }
 .cont-gral-contacto{
   justify-content: center;
+}
+  .btn-togler-event {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10;
+  width: 100%;
+  right: 0;
+  padding: 0px 14px;
+  background-color:rgb(22, 22, 22);
+  transition: all 1s;
 }
 }

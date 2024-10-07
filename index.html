@@ -19,13 +19,13 @@
   </head>
   <body>
     <!-- TODO comienza el header junto a navbar -->
-    <header>
+    <header id="navbar">
       <picture class="cont-logo"
         ><img
           src="assets/img/500px_Mesa de trabajo 1.png"
           alt="Logo inicio de Joaco PH"
       /></picture>
-      <nav>
+      <nav id="menu">
         <ul class="menu">
           <li><a href="#inicio" class="nav-link">Inicio</a></li>
           <li><a href="#sobreMi" class="nav-link">Sobre mi</a></li>
@@ -39,7 +39,7 @@
           <a href=""><i class="fa-solid fa-envelope"></i></a>
         </div>
       </nav>
-      <div class="cont-bar">
+      <div class="cont-bar" id="btn-toggle">
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
@@ -227,7 +227,7 @@
            <a href="tel:+"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
           <div class="cont-redes-contact-sec">
-            <h4>Encontrame y seguime en redes</h4>
+            <h4>Seguime en redes</h4>
             <div class="redes-interno-sec">
               <!-- <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a> -->
               <iframe scrolling="no" id="iframe-ig"  width="320" height="350" src="https://www.instagram.com/joaco.ph/embed/" frameborder="0"></iframe>
@@ -267,6 +267,7 @@
                 id="consulta"
                 cols="30"
                 rows="10"
+                placeholder="Ingrese su consulta"
               ></textarea>
             </fieldset>
             <div class="cont-button">
