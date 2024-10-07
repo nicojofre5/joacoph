@@ -109,8 +109,13 @@
       </p>
       <div class="cont-servicio">
         <div class="card-servicio">
-          <h3>Cobertura de eventos deportivos</h3>
-          <h4>Cobertura solo video</h4>
+         
+          <div>
+            <h3>Cobertura de eventos deportivos</h3>
+            <a class="btn-leermas" onclick="showHide()">Leer mas</a>
+          </div>
+          <div class="cont-texto" id="cont-texto">
+           <h4>Cobertura solo video</h4>
           <p>
             Capturamos la energía y el dinamismo de los eventos deportivos. Este
             servicio incluye un video en formato 16:9 de 3 minutos y un reel de
@@ -124,10 +129,16 @@
             los momentos de acción y los podios. Ambos servicios pueden
             combinarse o contratarse por separado, según tus necesidades.
           </p>
+          </div>
         </div>
         <div class="card-servicio">
-          <h3>Cobertura para competencias</h3>
-          <p>
+          
+          <div>
+            <h3>Cobertura para competencias</h3>
+            <a class="btn-leermas" onclick="showHide()">Leer mas</a>
+      
+          </div>
+          <!-- <p>
             Este servicio integral incluye tanto foto como video, con el
             objetivo de inmortalizar la emoción de la competencia en tres videos
             únicos y una galería de fotos editadas. Ofrecemos:
@@ -146,12 +157,12 @@
             evento, junto con una carpeta de 40 fotos editadas. Este servicio
             está diseñado para aquellos que buscan una cobertura audiovisual
             completa y de calidad.
-          </p>
+          </p> -->
         </div>
         <div class="card-servicio">
           <h3>Contrataciones particulares</h3>
 
-          <p>
+          <!-- <p>
             Este servicio está pensado para quienes buscan una sesión
             personalizada, ya sea en exteriores o interiores:
           </p>
@@ -168,12 +179,12 @@
           <p>
             Ideal para capturar momentos importantes con un enfoque profesional
             en locaciones a medida de tus necesidades.
-          </p>
+          </p> -->
         </div>
         <div class="card-servicio">
           <h3>Sesión grupal (solo fotos)</h3>
 
-          <p>
+          <!-- <p>
             Ofrecemos la oportunidad de realizar sesiones grupales donde cada
             integrante obtiene material profesional a un costo reducido. Este
             servicio incluye:
@@ -183,12 +194,12 @@
           <p>
             Una excelente opción para grupos que buscan obtener contenido visual
             de alta calidad sin sacrificar el toque artístico.
-          </p>
+          </p> -->
         </div>
         <div class="card-servicio">
           <h3>Cobertura para clases o entrenamientos</h3>
 
-          <p>
+          <!-- <p>
             Este servicio está enfocado en profesores y entrenadores que buscan
             proyectar la dinámica y energía de sus clases o entrenamientos.
             Ofrecemos tres opciones:
@@ -208,30 +219,36 @@
             La cantidad de material a entregar dependerá de la duración de las
             clases o la cantidad de sesiones pactadas. Este servicio es ideal
             para quienes quieren destacar su metodología y estilo de enseñanza.
-          </p>
+          </p> -->
         </div>
       </div>
     </section>
     <section id="contacto" class="contacto">
       <h2>Contacto</h2>
-    
+
       <div class="cont-gral-contacto">
         <div class="cont-redes-contact">
           <picture class="logo-contacto">
-            <img src="assets/img/1080px_tipografia.png" alt="">
+            <img src="assets/img/1080px_tipografia.png" alt="" />
           </picture>
           <h4>¿Necesitás ayuda con tu proyecto?</h4>
           <p>Te ofrecemos asesoramiento personalizado</p>
           <div class="redes-interno">
-           <a href="mailto:"><i class="fa-regular fa-envelope"></i></a> 
-           <a href="tel:+"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:"><i class="fa-regular fa-envelope"></i></a>
+            <a href="tel:+"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
           <div class="cont-redes-contact-sec">
             <h4>Seguime en redes</h4>
             <div class="redes-interno-sec">
               <!-- <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a> -->
-              <iframe scrolling="no" id="iframe-ig"  width="320" height="350" src="https://www.instagram.com/joaco.ph/embed/" frameborder="0"></iframe>
-
+              <iframe
+                scrolling="no"
+                id="iframe-ig"
+                width="320"
+                height="350"
+                src="https://www.instagram.com/joaco.ph/embed/"
+                frameborder="0"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -271,8 +288,9 @@
               ></textarea>
             </fieldset>
             <div class="cont-button">
-              
-              <button type="submit" class="enviar-msj"><i class="fa-regular fa-envelope"></i>Enviar mensaje</button>
+              <button type="submit" class="enviar-msj">
+                <i class="fa-regular fa-envelope"></i>Enviar mensaje
+              </button>
             </div>
           </form>
         </div>

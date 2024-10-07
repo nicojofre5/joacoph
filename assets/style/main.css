@@ -169,6 +169,22 @@ padding: 30px;
   justify-content: space-around;
   gap: 7px;
   margin: 5px;
+  align-items: center;
+}
+.btn-leermas{
+  display: inline-block;
+  background-color: rgb(126, 126, 126);
+  padding: 10px;
+  font-size: 1.4rem;
+  font-family: var(--font-two);
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 4px;
+}
+
+.cont-texto{
+  display: none;
+ 
 }
 .servicios p{
   padding: 8px 0px;
@@ -180,7 +196,13 @@ padding: 30px;
   background-color: rgba(31, 0, 30, 0.719);
   width: 350px;
   border-radius: 4px;
+  min-height: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+ justify-content: center;
 }
+
 .card-servicio h3{
   font-size: 2.3rem;
   padding: 9px 0px;
