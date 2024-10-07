@@ -203,6 +203,11 @@ fieldset{
 fieldset label{
   display: block;
 }
+.cont-gral-contacto{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 /* TODO Comienza el footer */
 
 footer {
