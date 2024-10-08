@@ -48,6 +48,7 @@ header {
   grid-area: header;
   padding: 5px;
   text-align: center;
+  z-index: 1;
 }
 .cont-bar {
     display: none;
@@ -146,7 +147,7 @@ main {
 .cont-sobremi img {
   width: 250px;
   padding: 10px;
-  border-radius: 100%;
+  border-radius: 40px;
 }
 .title_sobremi {
   font-size: 2.3rem;
@@ -168,7 +169,7 @@ padding: 30px;
   display: flex; 
   justify-content: space-around;
   gap: 7px;
-  margin: 5px;
+  margin:30px 20px;
   align-items: center;
 }
 .btn-leermas{
@@ -200,7 +201,22 @@ padding: 30px;
   text-align: center;
   display: flex;
   flex-direction:column;
- justify-content: center;
+
+}
+.card-servicio2{
+  background-image: url(../img/competencias.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card-servicio4{
+  background-image: url(../img/sesionesgrupales.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card-servicio5{
+  background-image: url(../img/clases.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .card-servicio h3{
@@ -245,6 +261,24 @@ textarea{
   font-family: var(--font-one);
   cursor: pointer;
   
+}
+.card-servicio1{
+  background-image: url(../img/foto0.2.jpg);
+  background-position: 20% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-servicio3{
+  background-image: url(../img/foto1.jpg);
+  background-position: center;
+  background-size: cover;
+
+}
+.card-servicio:hover{
+  cursor: pointer;
+  transform: translate(0, 12px);
+  transition: 1.4s;
+
 }
 .logo-contacto img{
   width: 260px;
