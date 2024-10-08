@@ -168,7 +168,7 @@ padding: 30px;
 .cont-servicio{
   display: flex; 
   justify-content: space-around;
-  gap: 7px;
+  gap: 8px;
   margin:30px 20px;
   align-items: center;
 }
@@ -197,7 +197,7 @@ padding: 30px;
   background-color: rgba(31, 0, 30, 0.719);
   width: 350px;
   border-radius: 4px;
-  min-height: 350px;
+  min-height: 400px;
   text-align: center;
   display: flex;
   flex-direction:column;
