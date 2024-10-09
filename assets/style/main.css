@@ -174,7 +174,7 @@ padding: 30px;
 }
 .btn-leermas{
   display: inline-block;
-  background-color: rgb(126, 126, 126);
+  background-color: rgb(36, 0, 56);
   padding: 10px;
   font-size: 1.4rem;
   font-family: var(--font-two);
@@ -183,10 +183,7 @@ padding: 30px;
   margin: 4px;
 }
 
-.cont-texto{
-  display: none;
- 
-}
+
 .servicios p{
   padding: 8px 0px;
   font-size: 1.3rem;
@@ -275,8 +272,8 @@ textarea{
 
 }
 .card-servicio:hover{
-  cursor: pointer;
-  transform: translate(0, 12px);
+
+  transform: translate(0, 8px);
   transition: 1.4s;
 
 }
@@ -466,4 +463,12 @@ footer p>a:hover{
   background-color:rgb(22, 22, 22);
   transition: all 1s;
 }
+}
+@media only screen and (min-width: 1500px) {
+  body{
+    grid-template-rows: 200px 300px 250px 400px 250px 350px 550px 500px 480px 100px;
+  }
+  header{
+    margin-top: 25px;
+  }
 }
