@@ -8,8 +8,8 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --font-one: "Merriweather", serif;
-  --font-two: "Fjalla One", sans-serif;
+  --font-one: "Raleway", sans-serif;
+  --font-two: "Hind", sans-serif;
   --color-one: black;
   --color-secondary: white;
 }
@@ -51,17 +51,20 @@ header {
   z-index: 1;
 }
 .cont-bar {
-    display: none;
+  display: none;
 }
 .nav-link {
   display: inline-block;
-  padding: 25px;
+  padding: 15px;
   margin: 12px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: var(--font-one);
   font-weight: bold;
-}
 
+}
+.menu li{
+  padding: 14px;
+}
 .nav-link:hover {
   color: rgb(231, 182, 201);
   transition: color 0.8s;
@@ -88,10 +91,10 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-.nombrePrincipal{
-    font-size: 1.9rem;
-    font-family: var(--font-one);
-    font-weight: 200;
+.nombrePrincipal {
+  font-size: 1.9rem;
+  font-family: var(--font-two);
+  font-weight: 300;
 }
 .inicio {
   padding: 0px 20px;
@@ -103,20 +106,26 @@ main {
 }
 .inicio p {
   font-size: 3.4rem;
-  font-family: var(--font-two);
+  font-family: var(--font-one);
+  font-weight: 700;
+  padding:0px 5px 5px;
+  -webkit-text-stroke-color: red;
+  -webkit-text-stroke: 10%;
 }
 
 .cont-subprof p {
   display: inline-block;
   font-size: 1.5rem;
-  background-color: rgb(46, 1, 1);
+  background-color: transparent;
   padding: 10px 12px;
   margin: 4px;
   color: rgb(243, 207, 221);
   border-radius: 5px;
-  font-family: fantasy;
+  font-family: var(--font-two);
   text-transform: uppercase;
   font-weight: 100;
+  border: 1px solid rgb(142, 68, 211);
+  border-radius: 8px;
 }
 /* TODO Seccion sobre mi */
 .sobremi {
@@ -125,13 +134,13 @@ main {
   justify-content: space-around;
   padding: 10px;
   gap: 5px;
-
 }
 .cont-presentacion {
   padding: 20px;
   align-self: center;
 }
-.cont-presentacion h2, .servicios h2 {
+.cont-presentacion h2,
+.servicios h2 {
   font-size: 2.4rem;
   padding: 7px 0px;
   font-family: var(--font-two);
@@ -166,16 +175,16 @@ main {
 
 .servicios {
   grid-area: servicios;
-padding: 30px;
+  padding: 30px;
 }
-.cont-servicio{
-  display: flex; 
+.cont-servicio {
+  display: flex;
   justify-content: space-around;
   gap: 8px;
-  margin:30px 20px;
+  margin: 30px 20px;
   align-items: center;
 }
-.btn-leermas{
+.btn-leermas {
   display: inline-block;
   background-color: rgb(36, 0, 56);
   padding: 10px;
@@ -186,13 +195,12 @@ padding: 30px;
   margin: 4px;
 }
 
-
-.servicios p{
+.servicios p {
   padding: 8px 0px;
   font-size: 1.3rem;
   font-family: var(--font-one);
 }
-.card-servicio{
+.card-servicio {
   padding: 20px;
   background-color: rgba(31, 0, 30, 0.719);
   width: 350px;
@@ -200,51 +208,50 @@ padding: 30px;
   min-height: 500px;
   text-align: center;
   display: flex;
-  flex-direction:column;
-
+  flex-direction: column;
 }
-.card-servicio2{
+.card-servicio2 {
   background-image: url(../img/competencias.jpg);
   background-position: center;
   background-size: cover;
 }
-.card-servicio4{
+.card-servicio4 {
   background-image: url(../img/sesionesgrupales.jpg);
   background-size: cover;
   background-position: center;
 }
-.card-servicio5{
+.card-servicio5 {
   background-image: url(../img/clases.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.card-servicio h3{
+.card-servicio h3 {
   font-size: 2.3rem;
   padding: 9px 0px;
   font-family: var(--font-two);
 }
-.card-servicio h4{
+.card-servicio h4 {
   font-size: 1.7rem;
   font-family: var(--font-two);
   font-weight: bolder;
-  
 }
 /* TODO formulario de contacto */
 
-.contacto{
+.contacto {
   grid-area: contacto;
   padding: 30px;
 }
-.contacto h2{
+.contacto h2 {
   font-size: 2.3rem;
   font-family: var(--font-two);
   text-transform: uppercase;
+  padding: 7px 0px;
 }
-fieldset{
+fieldset {
   border: 0px;
 }
-textarea{
+textarea {
   resize: none;
   background-color: transparent;
   color: white;
@@ -253,7 +260,7 @@ textarea{
   border: 1px solid rgb(211, 68, 125);
   border-radius: 4px;
 }
-.enviar-msj{
+.enviar-msj {
   padding: 8px 4px;
   background-color: transparent;
   color: white;
@@ -261,125 +268,115 @@ textarea{
   font-size: 1.4rem;
   font-family: var(--font-one);
   cursor: pointer;
-  
 }
-.enviar-msj i{
+.enviar-msj i {
   font-size: 1.8rem;
   padding: 8px;
 }
-.card-servicio1{
+.card-servicio1 {
   background-image: url(../img/foto0.2.jpg);
   background-position: 20% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.card-servicio3{
+.card-servicio3 {
   background-image: url(../img/foto1.jpg);
   background-position: center;
   background-size: cover;
-
 }
-.cont-texto{
+.cont-texto {
   font-size: 1.5rem;
   font-family: var(--font-one);
-
-
 }
-.card-servicio:hover{
-
+.card-servicio:hover {
   transform: translate(0, 8px);
   transition: 1.4s;
-
 }
-.logo-contacto img{
+.logo-contacto img {
   width: 260px;
 }
-.cont-button{
+.cont-button {
   display: flex;
   justify-content: end;
 }
-.enviar-msj:hover{
+.enviar-msj:hover {
   color: rgb(211, 68, 125);
   transition: 0.5s;
 }
-input{
+input {
   width: 100%;
   background-color: transparent;
   border: unset;
   border-bottom: 1px solid rgb(211, 68, 125);
   padding: 8px 0px;
   color: white;
-
 }
-fieldset label{
+fieldset label {
   display: block;
   margin: 5px 0px;
 }
-iframe{
+iframe {
   margin: 10px;
   width: 300px;
-  border:1px solid rgb(255, 255, 255);
-  border-radius:10px;
- 
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
 }
-.cont-gral-contacto{
+.cont-gral-contacto {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 5px;
-
 }
-.cont-form{
-   padding: 10px;
+.cont-form {
+  padding: 10px;
   display: flex;
   align-items: center;
 }
-.cont-gral-contacto h4{
+.cont-gral-contacto h4 {
   font-size: 1.9rem;
   font-family: var(--font-one);
   padding: 10px;
 }
-.cont-gral-contacto p{
+.cont-gral-contacto p {
   font-size: 1.7rem;
   font-family: var(--font-two);
   font-weight: 200;
   padding: 5px;
   margin: 0px 5px 5px;
 }
-.cont-redes-contact{
+.cont-redes-contact {
   text-align: center;
   padding: 15px;
   margin: 5px;
 }
-.form-contact{
+.form-contact {
   padding: 15px;
-  margin:35px 15px;
+  margin: 35px 15px;
 
   border-radius: 10px;
 }
-.form-contact fieldset>label{
+.form-contact fieldset > label {
   font-size: 1.3rem;
   font-family: var(--font-one);
-  padding:4px 0px;
-
+  padding: 4px 0px;
 }
-.redes-interno a>i{
+.redes-interno a > i {
   font-size: 2.8rem;
   padding: 5px;
   margin: 8px;
 }
-.redes-interno{
+.redes-interno {
   padding: 10px;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 4px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: rgb(41, 41, 41);
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: rgb(194, 194, 194);
-  border-radius:5px
+  border-radius: 5px;
 }
 #iframe-ig::-webkit-scrollbar {
   display: none !important;
@@ -395,18 +392,17 @@ footer {
   font-family: var(--font-one);
   font-weight: 200;
 }
-footer p>a{
-    color: rgb(255, 226, 245);
+footer p > a {
+  color: rgb(255, 226, 245);
 }
-footer p>a:hover{
-    color: rgb(211, 68, 125);
-    transition: color 0.8s;
+footer p > a:hover {
+  color: rgb(211, 68, 125);
+  transition: color 0.8s;
 }
 /* TODO COMIENZA LA PARTE DE MEDIAQUERY  */
 @media only screen and (max-width: 800px) {
-  
-    body {
-        display: unset;
+  body {
+    display: unset;
     /* grid-template-areas:
       "header header main main"
       "header header main main"
@@ -421,12 +417,11 @@ footer p>a:hover{
   }
   .cont-logo img {
     width: 90px;
-
   }
-  main{
+  main {
     min-height: 100vh;
   }
-  header{
+  header {
     position: fixed;
     background-color: black;
     width: 100%;
@@ -434,61 +429,68 @@ footer p>a:hover{
     justify-content: space-between;
     transition: 1.4s;
   }
- nav{
+  nav {
     display: none;
- 
-
- }
- .cont-bar {
+  }
+  .menu li{
+    padding: 14px;
+  }
+  .cont-bar {
     display: block;
     align-self: center;
     cursor: pointer;
- }
- .cont-bar i{
-   
+  }
+  .cont-bar i {
     font-size: 2.8rem;
     padding: 8px 18px;
- }
-  .nav-link{
-    padding:3px;
-    gap:0px
+  }
+  .nav-link {
+    padding: 3px;
+    gap: 0px;
   }
   .cont-presentacion {
     padding: 20px;
     align-self: baseline;
   }
- 
-.sobremi{
-      flex-wrap: wrap;
+.nombrePrincipal {
+  font-size: 1.8rem;
 }
+.inicio p {
+  font-size: 2.8rem;
+}
+.cont-subprof p{
+  font-size: 1.3rem;
+}
+  .sobremi {
+    flex-wrap: wrap;
+  }
 
-.cont-redes-header{
+  .cont-redes-header {
     display: none;
-}
-.cont-servicio{
-  flex-wrap: wrap;
-}
-.cont-gral-contacto{
-  justify-content: center;
-}
+  }
+  .cont-servicio {
+    flex-wrap: wrap;
+  }
+  .cont-gral-contacto {
+    justify-content: center;
+  }
   .btn-togler-event {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100px;
-  width: 100%;
-  right: 0;
-  padding: 8px 14px;
-  background-color:rgb(0, 0, 0);
-  transition: all 1s;
-}
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    right: 0;
+    padding: 8px 14px;
+    background-color: rgb(0, 0, 0);
+    transition: all 1s;
+  }
 }
 @media only screen and (min-width: 1500px) {
-  body{
+  body {
     grid-template-rows: 200px 300px 250px 400px 250px 350px 550px 500px 480px 100px;
   }
-  header{
+  header {
     margin-top: 25px;
-    
   }
 }
