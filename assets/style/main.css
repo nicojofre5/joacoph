@@ -194,7 +194,7 @@ padding: 30px;
   background-color: rgba(31, 0, 30, 0.719);
   width: 350px;
   border-radius: 4px;
-  min-height: 400px;
+  min-height: 500px;
   text-align: center;
   display: flex;
   flex-direction:column;
@@ -269,6 +269,12 @@ textarea{
   background-image: url(../img/foto1.jpg);
   background-position: center;
   background-size: cover;
+
+}
+.cont-texto{
+  font-size: 1.5rem;
+  font-family: var(--font-one);
+
 
 }
 .card-servicio:hover{
