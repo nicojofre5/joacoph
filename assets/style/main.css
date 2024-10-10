@@ -36,10 +36,11 @@ body {
     "contacto contacto contacto"
     "contacto contacto contacto"
     "contacto contacto contacto"
+    "contacto contacto contacto"
     "footer footer footer";
 
   grid-template-columns: 0.5fr 1fr 3fr;
-  grid-template-rows: 250px 200px 250px 300px 300px 550px 550px 850px 850px 300px 380px 300px 100px;
+  grid-template-rows: 250px 200px 250px 300px 300px 550px 550px 850px 850px 300px 380px 300px 350px 100px;
   color: white;
 }
 /* TODO Comienza el nav bar y header */
@@ -81,6 +82,14 @@ header {
   text-align: center;
   padding: 8px;
   margin: 50px 0px;
+}
+.fa-whatsapp:hover{
+  color: rgb(22, 189, 0);
+  transition: 1.2s;
+}
+.fa-envelope:hover{
+  color: rgb(255, 178, 209);
+  transition: 1.2s;
 }
 .cont-redes-header a > i {
   font-size: 2.4rem;
@@ -162,7 +171,8 @@ main {
 .cont-sobremi img {
   width: 250px;
   padding: 10px;
-  border-radius: 40px;
+  border-radius: 120px;
+
 }
 .title_sobremi {
   font-size: 2.3rem;
@@ -194,10 +204,11 @@ main {
   background-color: rgb(36, 0, 56);
   padding: 10px;
   font-size: 1.4rem;
-  font-family: var(--font-two);
+  font-family: var(--font-one);
   cursor: pointer;
   border-radius: 7px;
   margin: 4px;
+  font-weight: 200;
 }
 
 .servicios p {
@@ -271,9 +282,11 @@ textarea {
   background-color: transparent;
   color: white;
   border: unset;
-  font-size: 1.4rem;
-  font-family: var(--font-one);
+  font-size: 1.7rem;
+  font-family: var(--font-two);
   cursor: pointer;
+  font-style: italic;
+  font-weight: 300;
 }
 .enviar-msj i {
   font-size: 1.8rem;
@@ -284,6 +297,7 @@ textarea {
   background-position: 30% 20%;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 .card-servicio3 {
   background-image: url(../img/foto1.jpg);
@@ -300,7 +314,7 @@ textarea {
   transition: 1.4s;
 }
 .logo-contacto img {
-  width: 260px;
+  width: 350px;
 }
 .cont-button {
   display: flex;
@@ -325,13 +339,14 @@ fieldset label {
 }
 iframe {
   margin: 10px;
-  width: 300px;
+  width: 400px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
 }
 .cont-gral-contacto {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
 }
@@ -339,14 +354,15 @@ iframe {
   padding: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .cont-gral-contacto h4 {
-  font-size: 1.9rem;
+  font-size: 3rem;
   font-family: var(--font-one);
   padding: 10px;
 }
 .cont-gral-contacto p {
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   font-family: var(--font-two);
   font-weight: 200;
   padding: 5px;
@@ -396,12 +412,13 @@ footer {
   padding: 35px;
   margin: 10px;
   text-align: center;
-  font-size: 1.4rem;
-  font-family: var(--font-one);
-  font-weight: 200;
+  font-size: 1.6rem;
+  font-family: var(--font-two);
+  font-weight: 300;
 }
 footer p > a {
   color: rgb(255, 226, 245);
+  font-weight: bold;
 }
 footer p > a:hover {
   color: rgb(211, 68, 125);
@@ -494,9 +511,10 @@ footer p > a:hover {
 }
 @media only screen and (min-width: 1500px) {
   body {
-    grid-template-rows: 200px 300px 250px 400px 250px 350px 420px 500px 0px 450px 200px 300px 100px;
+    grid-template-rows: 200px 300px 250px 400px 250px 350px 420px 500px 0px 450px 150px 500px 350px 100px;
   }
   header {
     margin-top: 25px;
   }
+  
 }
