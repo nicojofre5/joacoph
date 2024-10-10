@@ -44,7 +44,7 @@ button1.addEventListener("click", function(){
 button2.addEventListener("click", function(){
   if(button2.innerText == "Leer mas"){
     cont2.innerText = textos[1].text;
-        button2.innerText = "Leer menos"
+    button2.innerText = "Leer menos"
   }
   else{
     cont2.innerHTML = '';
@@ -55,7 +55,7 @@ button2.addEventListener("click", function(){
 button3.addEventListener("click", function(){
   if(button3.innerText == "Leer mas"){
     cont3.innerText = textos[2].text;
-        button3.innerText = "Leer menos"
+    button3.innerText = "Leer menos"
   }
   else{
     cont3.innerHTML = '';
