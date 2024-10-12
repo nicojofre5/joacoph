@@ -12,6 +12,7 @@ html {
   --font-two: "Hind", sans-serif;
   --color-one: black;
   --color-secondary: white;
+  --color-terciary:rgb(142, 68, 211);
 }
 ul {
   list-style: none;
@@ -64,9 +65,8 @@ header {
   font-size: 1.7rem;
   font-family: var(--font-one);
   font-weight: 300;
-
 }
-.menu li{
+.menu li {
   padding: 14px;
 }
 .nav-link:hover {
@@ -83,13 +83,21 @@ header {
   padding: 8px;
   margin: 50px 0px;
 }
-.fa-whatsapp:hover{
-  color: rgb(22, 189, 0);
-  transition: 1.2s;
+.fa-instagram{
+  border-radius: 35px;
 }
-.fa-envelope:hover{
+.fa-instagram:hover {
+  background: linear-gradient(145deg, #3051f1 10%, #c92bb7 70%) no-repeat;
+  transition: 5s;
+  border-radius: 35px;
+}
+.fa-whatsapp:hover {
+  color: rgb(22, 189, 0);
+  transition: 0.5s;
+}
+.fa-envelope:hover {
   color: rgb(255, 178, 209);
-  transition: 1.2s;
+  transition: 0.5s;
 }
 .cont-redes-header a > i {
   font-size: 2.4rem;
@@ -120,7 +128,7 @@ main {
   font-size: 3.4rem;
   font-family: var(--font-one);
   font-weight: 700;
-  padding:0px 5px 5px;
+  padding: 0px 5px 5px;
   -webkit-text-stroke-color: red;
   -webkit-text-stroke: 10%;
 }
@@ -131,7 +139,7 @@ main {
   background-color: transparent;
   padding: 10px 12px;
   margin: 4px;
-  color: rgb(243, 207, 221);
+
   border-radius: 5px;
   font-family: var(--font-two);
   text-transform: uppercase;
@@ -171,8 +179,7 @@ main {
 .cont-sobremi img {
   width: 250px;
   padding: 10px;
-  border-radius: 120px;
-
+  border-radius: 50px;
 }
 .title_sobremi {
   font-size: 2.3rem;
@@ -193,24 +200,28 @@ main {
 .cont-servicio {
   display: flex;
   justify-content: space-around;
-  gap: 15px;
+  gap: 8px;
   margin: 30px 10px 0px;
   align-items: center;
   flex-wrap: wrap;
-  
 }
+
 .btn-leermas {
   display: inline-block;
-  background-color: rgb(36, 0, 56);
+  background-color: rgb(142, 68, 211);
   padding: 10px;
   font-size: 1.4rem;
   font-family: var(--font-one);
   cursor: pointer;
   border-radius: 7px;
   margin: 4px;
-  font-weight: 200;
+  font-weight: 500;
 }
 
+.btn-leermas:hover{
+  background-color: rgb(76, 5, 122);
+  transition: 1.4s;
+}
 .servicios p {
   padding: 8px 0px;
   font-size: 1.7rem;
@@ -241,6 +252,21 @@ main {
   background-image: url(../img/clases.jpg);
   background-size: cover;
   background-position: center;
+}
+.card-servicio7 {
+  background-image: url(../img/solofotos.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card-servicio8 {
+  background-image: url(../img/3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card-servicio9 {
+  background-image: url(../img/solovideos.jpg);
+  background-size: cover;
+  background-position: 100%;
 }
 
 .card-servicio h3 {
@@ -274,8 +300,9 @@ textarea {
   color: white;
   font-family: var(--font-one);
   padding: 8px;
-  border: 1px solid rgb(211, 68, 125);
+  border: 1px solid rgb(170, 113, 223);
   border-radius: 4px;
+  font-size: 1.6rem;
 }
 .enviar-msj {
   padding: 8px 4px;
@@ -294,20 +321,28 @@ textarea {
 }
 .card-servicio1 {
   background-image: url(../img/foto0.2.jpg);
-  background-position: 30% 20%;
+  background-position: 35%;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 .card-servicio3 {
   background-image: url(../img/foto1.jpg);
   background-position: center;
   background-size: cover;
 }
+.card-servicio6 {
+  background-image: url(../img/5.jpg);
+  background-position: 10%;
+  background-size: cover;
+}
+.card-servicio10 {
+  background-image: url(../img/4.jpg);
+  background-position: center;
+  background-size: cover;
+}
 .cont-texto {
   font-size: 1.5rem;
   font-family: var(--font-one);
-
 }
 .card-servicio:hover {
   transform: translate(0, 8px);
@@ -321,17 +356,23 @@ textarea {
   justify-content: end;
 }
 .enviar-msj:hover {
-  color: rgb(211, 68, 125);
+  color: var(--color-terciary);
   transition: 0.5s;
 }
 input {
   width: 100%;
   background-color: transparent;
   border: unset;
-  border-bottom: 1px solid rgb(211, 68, 125);
-  padding: 8px 0px;
+  border-bottom: 1px solid rgb(170, 113, 223);
+  padding: 8px 2px;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  
+}
+input:focus, textarea:focus{
+  border: 1px solid var(--color-terciary);
+  outline: none;
+  transition: 0.8s;
 }
 fieldset label {
   display: block;
@@ -347,6 +388,7 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 5px;
 }
@@ -354,7 +396,7 @@ iframe {
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
+
 }
 .cont-gral-contacto h4 {
   font-size: 3rem;
@@ -374,13 +416,14 @@ iframe {
   margin: 5px;
 }
 .form-contact {
-  padding: 15px;
-  margin: 35px 15px;
-
+  padding: 15px 65px;
+  margin: 35px;
   border-radius: 10px;
+ 
+  width: 100%;
 }
 .form-contact fieldset > label {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-family: var(--font-one);
   padding: 4px 0px;
 }
@@ -417,11 +460,11 @@ footer {
   font-weight: 300;
 }
 footer p > a {
-  color: rgb(255, 226, 245);
+  color: rgb(192, 139, 242);
   font-weight: bold;
 }
 footer p > a:hover {
-  color: rgb(211, 68, 125);
+  color: var(--color-terciary);
   transition: color 0.8s;
 }
 /* TODO COMIENZA LA PARTE DE MEDIAQUERY  */
@@ -446,6 +489,7 @@ footer p > a:hover {
   main {
     min-height: 100vh;
   }
+  
   header {
     position: fixed;
     background-color: black;
@@ -457,7 +501,7 @@ footer p > a:hover {
   nav {
     display: none;
   }
-  .menu li{
+  .menu li {
     padding: 14px;
   }
   .cont-bar {
@@ -477,25 +521,32 @@ footer p > a:hover {
     padding: 20px;
     align-self: baseline;
   }
-.nombrePrincipal {
-  font-size: 1.8rem;
-}
-.inicio p {
-  font-size: 2.8rem;
-}
-.cont-subprof p{
-  font-size: 1.3rem;
-}
+  .nombrePrincipal {
+    font-size: 1.8rem;
+  }
+  .inicio p {
+    font-size: 2.8rem;
+  }
+  .cont-subprof p {
+    font-size: 1.3rem;
+  }
   .sobremi {
     flex-wrap: wrap;
   }
+  iframe{
+    width: 270px;
+    
 
+  }
   .cont-redes-header {
     display: none;
   }
+.cont-gral-contacto h4{
+font-size: 1.8rem;
+}
  
-  .cont-gral-contacto {
-    justify-content: center;
+  .form-contact {
+    padding: 0px;
   }
   .btn-togler-event {
     display: flex;
@@ -508,6 +559,30 @@ footer p > a:hover {
     background-color: rgb(0, 0, 0);
     transition: all 1s;
   }
+  .logo-contacto img {
+    width: 180px;
+  }
+  footer{
+    font-size: 1.5rem;
+  }
+  textarea{
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1499px) {
+  body {
+    grid-template-rows: 200px 200px 250px 400px 250px 350px 420px 500px 0px 450px 150px 500px 500px 120px;
+  }
+
+  .card-servicio {
+    width: 245px;
+  }
+  .cont-redes-header {
+    margin: 4px;
+  }
+  .nav-link{
+    margin: 7px;
+  }
 }
 @media only screen and (min-width: 1500px) {
   body {
@@ -516,5 +591,4 @@ footer p > a:hover {
   header {
     margin-top: 25px;
   }
-  
 }
