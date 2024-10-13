@@ -21,7 +21,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
-body {
+#body-inicio {
   background-color: var(--color-one);
   display: grid;
   grid-template-areas:
@@ -119,7 +119,7 @@ main {
 .inicio {
   padding: 0px 20px;
   text-align: center;
-  background-image: url(../img/fondo.jpg);
+  background-image: url(../img/fondo.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -239,32 +239,32 @@ main {
   flex-direction: column;
 }
 .card-servicio2 {
-  background-image: url(../img/competencias.jpg);
+  background-image: url(../img/competencias.webp);
   background-position: center;
   background-size: cover;
 }
 .card-servicio4 {
-  background-image: url(../img/sesionesgrupales.jpg);
+  background-image: url(../img/sesionesgrupales.webp);
   background-size: cover;
   background-position: center;
 }
 .card-servicio5 {
-  background-image: url(../img/clases.jpg);
+  background-image: url(../img/clases.webp);
   background-size: cover;
   background-position: center;
 }
 .card-servicio7 {
-  background-image: url(../img/solofotos.jpg);
+  background-image: url(../img/solofotos.webp);
   background-size: cover;
   background-position: center;
 }
 .card-servicio8 {
-  background-image: url(../img/3.jpg);
+  background-image: url(../img/3.webp);
   background-size: cover;
   background-position: center;
 }
 .card-servicio9 {
-  background-image: url(../img/solovideos.jpg);
+  background-image: url(../img/solovideos.webp);
   background-size: cover;
   background-position: 100%;
 }
@@ -320,23 +320,23 @@ textarea {
   padding: 8px;
 }
 .card-servicio1 {
-  background-image: url(../img/foto0.2.jpg);
+  background-image: url(../img/foto0.2.webp);
   background-position: 35%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .card-servicio3 {
-  background-image: url(../img/foto1.jpg);
+  background-image: url(../img/foto1.webp);
   background-position: center;
   background-size: cover;
 }
 .card-servicio6 {
-  background-image: url(../img/5.jpg);
+  background-image: url(../img/5.webp);
   background-position: 10%;
   background-size: cover;
 }
 .card-servicio10 {
-  background-image: url(../img/4.jpg);
+  background-image: url(../img/4.webp);
   background-position: center;
   background-size: cover;
 }
@@ -396,6 +396,7 @@ iframe {
   padding: 10px;
   display: flex;
   align-items: center;
+  
 
 }
 .cont-gral-contacto h4 {
@@ -467,9 +468,46 @@ footer p > a:hover {
   color: var(--color-terciary);
   transition: color 0.8s;
 }
+
+/* TODO Pagina de exito */
+
+#body-exito{
+  background-color: black;
+
+}
+.picture-logo-exito img{
+  width: 300px;
+}
+#body-exito{
+
+  color: white;
+  display: flex;
+  justify-content: center;
+ 
+}
+.text-gracias h1 , .text-gracias h2{
+  font-family: var(--font-one);
+}
+
+.text-gracias h1{
+font-size: 3rem;
+}
+.main-exito{
+min-height: 100vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: row;
+
+}
+.text-gracias h2{
+font-size: 2rem;
+font-weight: 300;
+}
+
 /* TODO COMIENZA LA PARTE DE MEDIAQUERY  */
 @media only screen and (max-width: 800px) {
-  body {
+  #body-inicio {
     display: unset;
     /* grid-template-areas:
       "header header main main"
@@ -542,35 +580,57 @@ footer p > a:hover {
     display: none;
   }
 .cont-gral-contacto h4{
-font-size: 1.8rem;
+font-size: 2.3rem;
+}
+.cont-gral-contacto p{
+  font-size: 1.9rem;
+  font-weight: 200;
+}
+.form-contact {
+  padding: 0px;
+}
+.btn-togler-event {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  right: 0;
+  padding: 8px 14px;
+  background-color: rgb(0, 0, 0);
+  transition: all 1s;
+}
+.logo-contacto img {
+  width: 250px;
+}
+footer{
+  font-size: 1.6rem;
+  padding: 10px;
+}
+textarea{
+  font-size: 1.3rem;
+}
+.main-exito{
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.text-gracias h1{
+  font-size: 2.3rem;
+}
+.text-gracias h2{
+  font-size: 1.8rem;
+  padding:5px;
+}
 }
  
-  .form-contact {
-    padding: 0px;
-  }
-  .btn-togler-event {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100px;
-    width: 100%;
-    right: 0;
-    padding: 8px 14px;
-    background-color: rgb(0, 0, 0);
-    transition: all 1s;
-  }
-  .logo-contacto img {
-    width: 180px;
-  }
-  footer{
-    font-size: 1.5rem;
-  }
-  textarea{
-    font-size: 1.3rem;
-  }
-}
+ 
+
+  
+
 @media only screen and (min-width: 900px) and (max-width: 1499px) {
-  body {
+  #body-inicio {
     grid-template-rows: 200px 200px 250px 400px 250px 350px 420px 500px 0px 450px 150px 500px 500px 120px;
   }
 
@@ -585,7 +645,7 @@ font-size: 1.8rem;
   }
 }
 @media only screen and (min-width: 1500px) {
-  body {
+  #body-inicio {
     grid-template-rows: 200px 300px 250px 400px 250px 350px 420px 500px 0px 450px 150px 500px 350px 100px;
   }
   header {

@@ -3,12 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:title"
+      content="Joaco PH - Creador de contenido audiovisual"
+    />
+    <meta
+      name="description"
+      content="Nos dedicamos a la producción audiovisual fotográfica y/o videográfica"
+    />
+    <meta
+      name="keywords"
+      content="fotografo, videografo, Joaco PH, videos, fotos, deportivo, eventos"
+    />
+    <meta name="author" content="Nicolas Jofre" />
+    <meta name="copyright" content="Joaquin Calabrese" />
+    <meta property="og:type" name="type" content="website" />
+
     <link rel="stylesheet" href="assets/style/main.css" />
     <link
       rel="shortcut icon"
-      href="assets/img/500px_Mesa de trabajo 1.png"
+      href="assets/img/500px_Mesa de trabajo 1.webp"
       type="image/x-icon"
     />
+    <meta
+      property="og:image"
+      name="image"
+      content="https://i.postimg.cc/kXFkdt5T/500px-tipografia.png"
+    />
+    <meta property="og:url" name="url" content="https://joacoph.com.ar" />
+    <meta
+      property="og:site_name"
+      name="site_name"
+      content="Joaco PH Creador de contenido audiovisual"
+    />
+    <meta property="og:image:width" name="image:width" content="250" />
+    <meta property="og:image:height" name="image:height" content="250" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,13 +46,11 @@
     />
     <title>Joaco PH - Creador de contenido audiovisual</title>
   </head>
-  <body>
+  <body id="body-inicio">
     <!-- TODO comienza el header junto a navbar -->
     <header id="navbar">
       <picture class="cont-logo"
-        ><img
-          src="assets/img/500px_Mesa de trabajo 1.png"
-          alt="Logo inicio de Joaco PH"
+        ><img src="assets/img/500px.webp" alt="Logo inicio de Joaco PH"
       /></picture>
       <nav id="menu">
         <ul class="menu">
@@ -34,9 +61,15 @@
         </ul>
 
         <div class="cont-redes-header">
-          <a href="https://instagram.com/joaco.ph/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/5491125014351" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="mailto:contacto@joacoph.com.ar" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://instagram.com/joaco.ph/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://wa.me/5491125014351" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a href="mailto:contacto@joacoph.com.ar" target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
         </div>
       </nav>
       <div class="cont-bar" id="btn-toggle">
@@ -54,7 +87,7 @@
     <section class="sobremi" id="sobreMi">
       <picture class="cont-sobremi">
         <img
-          src="assets/img/Imagen de WhatsApp 2024-10-07 a las 17.11.38_728298fb.jpg"
+          src="assets/img/Imagen de WhatsApp 2024-10-07 a las 17.11.38_728298fb.webp"
           alt="Imagen personal de seccoin sobre mi Joaco PH"
         />
       </picture>
@@ -144,7 +177,7 @@
           </div>
           <div class="cont-texto" id="cont-texto5"></div>
         </div>
-       
+
         <!--  -->
       </div>
       <div class="cont-servicio">
@@ -191,15 +224,21 @@
       <div class="cont-gral-contacto">
         <div class="cont-redes-contact">
           <picture class="logo-contacto">
-            <img src="assets/img/1080px_tipografia.png" alt="logo JoaquinCalabrese" />
+            <img
+              src="assets/img/1080px_tipografia.webp"
+              alt="logo JoaquinCalabrese"
+            />
           </picture>
           <h4>¿Necesitás ayuda con tu proyecto?</h4>
           <p>Te ofrecemos asesoramiento personalizado</p>
           <div class="redes-interno">
-            <a href="mailto:contacto@joacoph.com.ar" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-            <a href=" https://wa.me/5491125014351" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:contacto@joacoph.com.ar" target="_blank"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+            <a href=" https://wa.me/5491125014351" target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
           </div>
-         
 
           <div class="cont-redes-contact-sec">
             <h4>Seguime en redes</h4>
@@ -213,15 +252,21 @@
                 src="https://www.instagram.com/joaco.ph/embed/"
                 frameborder="0"
               ></iframe>
-            
             </div>
           </div>
         </div>
 
         <div class="cont-form">
-          <form class="form-contact" action="php/form.php" method="post" autocomplete="off">
+          <form
+            class="form-contact"
+            action="php/form.php"
+            method="post"
+            autocomplete="off"
+          >
             <fieldset>
-              <label for="nombreApellido" class="form-label">Nombre y apellido</label>
+              <label for="nombreApellido" class="form-label"
+                >Nombre y apellido</label
+              >
               <input
                 type="text"
                 class="form-control"
